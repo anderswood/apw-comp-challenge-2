@@ -1,0 +1,193 @@
+
+/* colors: https://www.materialpalette.com/blue/deep-purple*/
+
+body {
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+}
+
+/*Type Formatting: Nav Bar and Title*/
+#title {
+  color: #757575;
+}
+
+#shares {
+  color: #BDBDBD;
+}
+
+#playlists, #pers-vids {
+  color: #757575;
+}
+
+#admin-un {
+  color: #2196F3;
+}
+
+#logo {
+  color: #FFFFFF;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+#steel {
+  color: #1976D2;
+  font-weight: 900;
+  font-size: 55px;
+}
+
+/*Type Formatting: Body*/
+.icon {
+  /*float: left;*/
+}
+
+#shares {
+  display: inline-block;
+}
+
+.views {
+  font-size: 11px;
+  color: #FFFFFF;
+}
+
+.views-qty {
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.name {
+  font-size: 16px;
+  color: #757575;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.link {
+  font-size: 12px;
+  color: #757575;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px;
+}
+
+.playlist-title, .attachments {
+  font-size: 12px;
+  color: #757575;
+}
+
+.playlist-name {
+  font-size: 15px;
+  color: #757575;
+}
+
+.attach-number {
+  font-size: 30px;
+  color: #2196F3;
+}
+
+#logo {
+  color: #FFFFFF;
+}
+
+/*Container formatting*/
+nav {
+  width: 100%;
+  border: 1px solid green;
+  background-color: #212121;
+}
+
+ul {
+  padding: 0 0 0 15px;
+}
+
+li {
+  display: inline-block;
+  font-size: 10px;
+}
+
+#admin-mobile {
+  display: none;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid blue;
+}
+
+.card {
+  border: 1px solid red;
+  min-width: 240px;
+  max-width: 300px;
+  width: 23%;
+  height: 400px;
+  margin-bottom: 8px;
+}
+
+.header-box {
+  height: 33.333%;
+  border: 1px solid orange;
+}
+
+.card-1 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/blue-steel.jpg') center;
+  background-size: cover;
+}
+
+.card-2 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/la-tigre.jpg') center;
+  background-size: cover;
+}
+
+.header-content {
+  width: 90%;
+  height: 90%;
+  margin: 10px auto 0 auto;
+  border: 1px solid magenta;
+}
+
+.views-box {
+  float: right;
+}
+
+.arrow-icon {
+  /*filter: invert(80%);*/
+  background-color: #FFFFFF;
+  border-radius: 25px;
+}
+
+.views, .views-qty {
+  /*display: inline-block;*/
+  /*float: right;*/
+}
+
+.content-box {
+  height: 66.666%;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+.url-box {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  word-break: break-all;
+  overflow: scroll;
+  background-color: #F2F2F2;
+}
+
+@media screen and (min-width: 700px) {
+
+
+}
