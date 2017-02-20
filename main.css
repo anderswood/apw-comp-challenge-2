@@ -115,6 +115,8 @@ h5 {
   font-size: 16px;
   margin: 8px 0 4px 0;
   color: #757575;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .timestamp {
@@ -139,6 +141,8 @@ h5 {
   font-size: 16px;
   margin: 7px 0 0 0;
   color: #757575;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .attachments {
@@ -180,24 +184,28 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .card {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   background-color: #FFFFFF;
   /*min-width: 240px;
   max-width: 260px;*/
   width: 250px;
   /*width: 50%;*/
   height: 400px;
-  margin: 0 5px 8px 5px;
+  margin: 0 5px 12px 5px;
   box-shadow: 0 0 10px #212121;
 }
 
 .header-box {
+  /*width: 90%;*/
   height: 33.333%;
-  border: 1px solid orange;
+  /*margin: 0 auto;*/
+  padding-top: 10px;
+
+  /*border: 1px solid orange;*/
 }
 
 .card-1 .header-box {
@@ -219,8 +227,8 @@ li {
 .header-content {
   width: 90%;
   height: 90%;
-  margin: 10px auto 0 auto;
-  border: 1px solid magenta;
+  margin: 0 auto;
+  /*border: 1px solid magenta;*/
 }
 
 .views-box {
@@ -243,7 +251,7 @@ li {
   height: 66.666%;
   width: 90%;
   margin: 0 auto;
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .url-box {
@@ -252,6 +260,7 @@ li {
   margin: 0 auto;
   word-break: break-all;
   overflow: scroll;
+  /*word-wrap: break-word;*/
   background-color: #F2F2F2;
 }
 
