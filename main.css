@@ -7,10 +7,11 @@ body {
   background-color: #F2F2F2;
 }
 
-/*Nav Bar and Title*/
-
-h1 {
-
+nav {
+  width: 100%;
+  height: 115px;
+  background-color: #212121;
+  border-bottom: 1px solid #BDBDBD;
 }
 
 h4 {
@@ -24,9 +25,6 @@ h5 {
   margin: auto 0;
 }
 
-#nav-links {
-}
-
 #links {
   display: inline-flex;
   justify-content: space-around;
@@ -35,25 +33,20 @@ h5 {
   height: 45px;
 }
 
-#shares, #playlists, #pers-vids {
-  display: none;
-}
-
-#title {
-  margin: 12px 0 15px 20px;
-  color: #757575;
-}
-
-.shares-icon {
-  margin-left: 10px;
-}
-
 #shares {
   color: #BDBDBD;
 }
 
 #playlists, #pers-vids {
   color: #757575;
+}
+
+#shares, #playlists, #pers-vids {
+  display: none;
+}
+
+.shares-icon {
+  margin-left: 10px;
 }
 
 #admin {
@@ -82,22 +75,32 @@ h5 {
 }
 
 #logo {
-  color: #FFFFFF;
   font-family: 'Playfair Display SC', serif;
   font-weight: 400;
   font-size: 45px;
   text-align: right;
   padding-bottom:5px;
   margin-right: 15px;
+  color: #FFFFFF;
 }
 
 #steel {
-  color: #1976D2;
   font-weight: 900;
   font-size: 55px;
+  color: #1976D2;
+}
+
+#title {
+  margin: 12px 0 15px 20px;
+  color: #757575;
 }
 
 /*Cards*/
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 .views {
   font-size: 11px;
@@ -106,17 +109,13 @@ h5 {
 }
 
 .views-qty {
-  font-size: 28px;
   margin-top: 5px;
   color: #FFFFFF;
 }
 
 .name {
-  font-size: 16px;
   margin: 8px 0 4px 0;
   color: #757575;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .timestamp {
@@ -127,10 +126,10 @@ h5 {
 
 .link {
   font-size: 12px;
-  color: #757575;
   text-decoration: none;
   display: inline-block;
   padding: 4px;
+  color: #757575;
 }
 
 .playlist-title {
@@ -138,11 +137,8 @@ h5 {
 }
 
 .playlist-name {
-  font-size: 16px;
   margin: 7px 0 0 0;
   color: #757575;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .attachments {
@@ -150,64 +146,71 @@ h5 {
 }
 
 .attach-number {
-  font-size: 30px;
   margin: 5px 0 0 0;
   color: #2196F3;
 }
 
-/*Container formatting*/
-nav {
-  width: 100%;
-  /*border: 1px solid green;*/
-  background-color: #212121;
-  height: 115px;
-  border-bottom: 1px solid #BDBDBD;
+.views-qty, .attach-number {
+  font-size: 30px;
 }
 
-ul {
-  display: inline-block;
-  width: 40%;
-  margin: 0 auto;
-  padding: 0 0 0 15px;
+.name, .playlist-name {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-li {
-  display: inline-block;
-  font-size: 10px;
-}
-
-#admin-mobile {
-  display: none;
-}
-
-#content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  /*border: 1px solid blue;*/
-}
-
+/*Cards content*/
 .card {
-  /*border: 1px solid red;*/
-  background-color: #FFFFFF;
-  /*min-width: 240px;
-  max-width: 260px;*/
   width: 250px;
-  /*width: 50%;*/
   height: 400px;
   margin: 0 5px 12px 5px;
+  background-color: #FFFFFF;
   box-shadow: 0 0 10px #212121;
 }
 
 .header-box {
-  /*width: 90%;*/
   height: 33.333%;
-  /*margin: 0 auto;*/
   padding-top: 10px;
-
-  /*border: 1px solid orange;*/
 }
 
+.header-content {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+.views-box {
+  float: right;
+}
+
+.arrow-icon {
+  background-color: #FFFFFF;
+  opacity: .8;
+  border-radius: 25px;
+}
+
+.arrow-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.content-box {
+  height: 66.666%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.url-box {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  word-break: break-all;
+  overflow: scroll;
+  background-color: #F2F2F2;
+}
+
+/*Card header images and background color*/
 .card-1 .header-box {
   background: linear-gradient(
       rgba(0, 114, 198, 0.45),
@@ -224,44 +227,68 @@ li {
   background-size: cover;
 }
 
-.header-content {
-  width: 90%;
-  height: 90%;
-  margin: 0 auto;
-  /*border: 1px solid magenta;*/
+.card-3 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/magnum.jpg') center;
+  background-size: 140%;
 }
 
-.views-box {
-  float: right;
+.card-4 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/ferrari.jpg') 10px 0;
+  background-size: 120%;
 }
 
-.arrow-icon {
-  /*filter: invert(80%);*/
-  background-color: #FFFFFF;
-  opacity: .8;
-  border-radius: 25px;
+.card-5 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/mugatu.jpg');
+  background-size: 105%;
 }
 
-.arrow-icon:hover {
-  opacity: 1;
-  cursor: pointer;
+.card-6 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/omf.jpg') center;
+  background-size: cover;
 }
 
-.content-box {
-  height: 66.666%;
-  width: 90%;
-  margin: 0 auto;
-  /*border: 1px solid blue;*/
+.card-7 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/fgfa.jpg') center;
+  background-size: cover;
 }
 
-.url-box {
-  width: 100%;
-  height: 60px;
-  margin: 0 auto;
-  word-break: break-all;
-  overflow: scroll;
-  /*word-wrap: break-word;*/
-  background-color: #F2F2F2;
+.card-8 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/mugatu-lolly.jpg') 10% 0;
+  background-size: cover;
+}
+
+.card-9 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/ant-center.jpg') center;
+  background-size: cover;
+}
+
+.card-10 .header-box {
+  background: linear-gradient(
+      rgba(0, 114, 198, 0.45),
+      rgba(0, 114, 198, 0.45)),
+      url('pictures/underwear.jpg') center;
+  background-size: cover;
 }
 
 
@@ -276,18 +303,17 @@ li {
 }
 
 @media screen and (min-width: 700px) {
-  #shares, #playlists, #pers-vids {
-    display: inline-block;
-    font-size: 18px;
-    margin: 0 20px 0 0;
-  }
-
   #links {
     width: 70%;
   }
 
   #admin {
     width: 25%;
+  }
+  #shares, #playlists, #pers-vids {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 20px 0 0;
   }
 }
 
@@ -303,12 +329,6 @@ li {
     margin: 65px 0 0 15px;
   }
 
-  #shares, #playlists, #pers-vids {
-    display: inline-block;
-    font-size: 18px;
-    margin: 0 53px 0 0;
-  }
-
   #admin {
     float: right;
   }
@@ -316,6 +336,10 @@ li {
   #logo {
     display: inline-block;;
     float: right;
+  }
+
+  #shares, #playlists, #pers-vids {
+    margin: 0 53px 0 0;
   }
 }
 
@@ -329,9 +353,7 @@ li {
   }
 
   #shares, #playlists, #pers-vids {
-    display: inline-block;
     vertical-align: middle;
-    font-size: 18px;
     margin: 0 75px 0 0;
   }
 }
