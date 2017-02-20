@@ -4,10 +4,10 @@
 In this project we were tasked with creating a responsive layout using the original comp as guidance. I took artistic liberties with the color scheme, copy and icons, but adhered to the comp with respect to layout.
 
 Image of original comp:
-![alt tag](comp-image.png)
+![alt tag](comp-images/comp-image.png)
 
 Image of project (desktop version):
-![alt tag](project-desktop.png)
+![alt tag](comp-images/project-desktop.png)
 
 Image of project (mobile version):
-![alt tag](project-mobile.png)
+![alt tag](comp-images/project-mobile.png)
